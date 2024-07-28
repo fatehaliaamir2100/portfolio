@@ -36,7 +36,8 @@
     .profile-image {
         width: 300px;
         height: 300px;
-        border-radius: 5px;
+        border-radius: 50%;
+        object-fit: cover; 
     }
 
     .profile-info {
@@ -55,15 +56,18 @@
         margin-top: 20px;
     }
 
-    button {
+    .button {
         padding: 10px 20px;
-        margin-right: 10px;
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        width: 200px; /* Set a fixed width for equal sizes */
+        text-align: center;
+        display: inline-block;
+        margin-right: 10px;
     }
 
-    .hire-me {
+    .contact-me {
         background-color: #333;
         color: white;
     }
@@ -72,10 +76,6 @@
         background-color: transparent;
         border: 1px solid #333;
         color: #333;
-        text-decoration: none;
-        display: inline-block;
-        padding: 10px 20px;
-        border-radius: 5px;
     }
 
     footer {
@@ -95,6 +95,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fateh Ali Aamir - About Me</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function showContactInfo() {
+            alert("Email: hello@fatehaliaamir.com");
+        }
+    </script>
 </head>
 
 <body>
@@ -112,12 +117,11 @@
                     <div class="personal-info">
                         <p><strong>Name:</strong> Fateh Ali Aamir</p>
                         <p><strong>Age:</strong> 24 Years</p>
-                        <p><strong>Website:</strong> fatehaliaamir.com</p>
                         <p><strong>Email:</strong> hello@fatehaliaamir.com</p>
                     </div>
                     <div class="buttons">
-                        <button class="hire-me">Hire Me For Work</button>
-                        <a href="resume-fateh-4.pdf" class="download-resume" download>Download Resume</a>
+                        <button class="button contact-me" onclick="showContactInfo()">Contact Me</button>
+                        <a href="resume.pdf" class="button download-resume" download>Download Resume</a>
                     </div>
                 </div>
             </div>
