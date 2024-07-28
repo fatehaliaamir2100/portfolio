@@ -1,362 +1,128 @@
 <!DOCTYPE html>
-<html class='no-js'>
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <title>Fateh Ali Aamir</title>
-
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+<html lang="en">
 
     <style>
-        /* Include contents of bootstrap.min.css, ionicons.min.css, owl.carousel.css, owl.theme.css, owl.transitions.css, magnific-popup.css, style.css, and color-default.css here */
-
-        /* Example for inline CSS content */
-        body {
-            font-family: 'Helvetica', sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .loader img {
-            display: block;
-            margin: auto;
-        }
-
-        /* Add more styles as needed */
-    </style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    
+    header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    h1 {
+        color: #333;
+        border-bottom: 2px solid #333;
+        display: inline-block;
+        padding-bottom: 10px;
+    }
+    
+    .profile {
+        display: flex;
+        gap: 30px;
+    }
+    
+    .profile-image {
+        width: 300px;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .profile-info {
+        flex: 1;
+    }
+    
+    .bio {
+        margin-bottom: 20px;
+    }
+    
+    .personal-info p {
+        margin: 5px 0;
+    }
+    
+    .buttons {
+        margin-top: 20px;
+    }
+    
+    button {
+        padding: 10px 20px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .hire-me {
+        background-color: #333;
+        color: white;
+    }
+    
+    .download-resume {
+        background-color: transparent;
+        border: 1px solid #333;
+        color: #333;
+    }
+    
+    footer {
+        margin-top: 30px;
+        text-align: center;
+        border-top: 1px solid #ddd;
+        padding-top: 20px;
+    }
+    
+    .social-icons {
+        margin-top: 10px;
+    }
+</style>
+        
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fateh Ali Aamir - About Me</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-
-    <!--=============================================================================
-        Preloader
-    ===============================================================================-->
-    <div id='preloader'>
-        <div class='loader'>
-            <img src='img/load.gif' alt='symp'>
-        </div>
+    <div class="container">
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <main>
+            <div class="profile">
+                <img src="profile-image.jpg" alt="Fateh Ali Aamir" class="profile-image">
+                <div class="profile-info">
+                    <p class="bio">
+                        As a seasoned Software Engineer specializing in AI solutions, I bring a wealth of experience from working with global teams and leading innovative projects. With a strong foundation in Computer Science from the National University of Computer and Emerging Sciences, I have honed my skills in developing cutting-edge applications using Python, JavaScript, and TypeScript. My expertise spans across creating RAG-based chatbots, audio transcription systems, and AI-driven customer support agents utilizing OpenAI technologies. I am proficient in various frameworks and databases, including FastAPI, Express, MySQL, and Prisecone. My commitment to continuous learning is reflected in my certifications from Google Cloud Skills Boost and DeepLearning.AI, ensuring that I stay at the forefront of technological advancements. Whether it's developing backend apps, integrating AI flows in e-commerce platforms, or conducting sales calls with international clients, my diverse skill set and passion for technology drive me to deliver exceptional results.
+                    </p>
+                    <div class="personal-info">
+                        <p><strong>Name:</strong> Fateh Ali Aamir</p>
+                        <p><strong>Age:</strong> 24 Years</p>
+                        <p><strong>Website:</strong> fatehaliaamir.com</p>
+                        <p><strong>Email:</strong> hello@fatehaliaamir.com</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="hire-me">Hire Me For Work</button>
+                        <button class="download-resume">Download Resume</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Fateh Ali Aamir</p>
+            <div class="social-icons">
+                <!-- Add social media icons here -->
+            </div>
+        </footer>
     </div>
-
-    <!--=============================================================================
-        Main Wrapper
-    ===============================================================================-->
-    <div id='wrapper'>
-
-        <!--=============================================================================
-            Front Section
-        ===============================================================================-->
-        <section class='front-section'>
-
-            <div class='container'>
-
-                <div class='transition-mask'></div>
-
-                <div class='front-person-img'>
-
-                    <!--person's image-->
-                    <img src='img/1714897779280.jpeg' alt='Symp'>
-                    <!--/person's image-->
-
-                </div>
-
-                <!--person's titles-->
-                <div class='front-person-titles'>
-
-                    <!--title1-->
-                    <span class='t1'>
-                        Full-Stack
-                    </span>
-                    <!--/title1-->
-
-                    <!--title2-->
-                    <span class='t2'>
-                        Generative AI
-                    </span>
-                    <!--/title2-->
-
-                    <!--title3-->
-                    <span class='t3'>
-                        Freelancer
-                    </span>
-                    <!--/title3-->
-
-                </div>
-                <!--/person's titles-->
-
-                <nav class='front-person-links'>
-
-                    <!--
-                        navigation links, data-section attribute points towards the section with id to be opened. 
-                    -->
-
-                    <ul>
-
-                        <li>
-                            <a href='#' data-section='about'>CLICK HERE TO LEARN ABOUT ME!</a>
-                        </li>
-
-                    </ul>
-
-                </nav>
-
-                <div class='front-heading text-center'>
-
-                    <h2>
-                        Fateh Ali Aamir
-                    </h2>
-
-                </div>
-
-            </div>
-
-        </section>
-        <!--=============================================================================
-            /Front Section
-        ===============================================================================-->
-
-        <!--=============================================================================
-            About Section
-        ===============================================================================-->
-        <section id='about' class='about-section section'>
-
-            <div class='basic-info section-block'>
-
-                <div class='container'>
-
-                    <div class='section-header text-center'>
-
-                        <h2>About Me</h2>
-
-                        <!--divider-->
-                        <div class='divider-draft center'></div>
-                        <!--/divider-->
-
-                    </div>
-
-                    <div class='row'>
-
-                        <div class='col-md-4'>
-                            <div class='about-person-img'>
-
-                                <img src='img/1714897779280.jpeg' alt='symp'>
-
-                            </div>
-
-                        </div>
-
-                        <div class='col-md-8 about-info'>
-
-                            <p>
-                                As a seasoned Software Engineer specializing in AI solutions, I bring a wealth of experience from working with global teams and leading innovative projects. With a strong foundation in Computer Science from the National University of Computer and Emerging Sciences, I have honed my skills in developing cutting-edge applications using Python, JavaScript, and TypeScript. My expertise spans across creating RAG-based chatbots, audio transcription systems, and AI-driven customer support agents utilizing OpenAI technologies. I am proficient in various frameworks and databases, including FastAPI, Express, MySQL, and Pinecone. My commitment to continuous learning is reflected in my certifications from Google Cloud Skills Boost and DeepLearning.AI, ensuring that I stay at the forefront of technological advancements. Whether it's developing backend apps, integrating AI flows in e-commerce platforms, or conducting sales calls with international clients, my diverse skill set and passion for technology drive me to deliver exceptional results.
-                            </p>
-
-                            <div class='clearfix'></div>
-
-                            <ul class='info-list'>
-
-                                <li>
-                                    <div class='inner'>
-                                        <h4>Name</h4>
-                                        <p>Fateh Ali Aamir</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class='inner'>
-                                        <h4>Age</h4>
-                                        <p>24 Years</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class='inner'>
-                                        <h4>Website</h4>
-                                        <p>fatehaliaamir.com</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class='inner'>
-                                        <h4>Email</h4>
-                                        <p>hell0@fatehaliaamir.com</p>
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                            <a href='#' class='symp-btn'>Hire Me For Work</a>
-
-                            <a href='#' class='symp-btn link-btn'><i class='ion-ios-download'></i>Download Resume</a>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class='footer bg-lightgray section-block'>
-
-                <div class='container'>
-
-                    <div class='row'>
-
-                        <div class='col-xs-6 text-left'>
-                            <h4>Fateh Ali Aamir</h4>
-                        </div>
-
-                        <div class='col-xs-6 text-right'>
-                            <ul class='footer-social'>
-                                <li>
-                                    <a href='#'>
-                                        <i class='ion-social-facebook'></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#'>
-                                        <i class='ion-social-twitter'></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#'>
-                                        <i class='ion-social-pinterest'></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href='#'>
-                                        <i class='ion-social-dribbble'></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <!--=============================================================================
-            /About Section
-        ===============================================================================-->
-
-        <!--=============================================================================
-            Contact Section
-        ===============================================================================-->
-        <section id='contact' class='contact-section section'>
-
-            <div class='contact-block section-block'>
-                <div class='container'>
-                    <div class='row'>
-                        <div class='col-md-6 col-md-offset-3'>
-
-                            <div class='section-header text-center'>
-                                <h2 class='animate text-over-block'>Contact Me</h2>
-                                <!--divider-->
-                                <div class='divider-draft center'></div>
-                                <!--/divider-->
-                                <p>
-                                    I'm available for freelancing. If you want something to be built or just to say hi, feel free to shoot me a message.
-                                </p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class='row'>
-                        <div class='col-md-8 col-md-offset-2'>
-
-                            <form id='contact-form' class='contact-form' action='mail.php' method='post' data-toggle='validator'>
-
-                                <div id='contact-form-result'></div>
-
-                                <div class='row'>
-
-                                    <div class='col-md-6'>
-
-                                        <div class='form-group'>
-                                            <input type='text' class='form-control' placeholder='Name' required>
-
-                                            <div class='help-block with-errors'></div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class='col-md-6'>
-                                        <div class='form-group'>
-                                            <input type='email' class='form-control' placeholder='Email' required>
-
-                                            <div class='help-block with-errors'></div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class='row'>
-
-                                    <div class='col-md-6'>
-                                        <div class='form-group'>
-                                            <input type='text' class='form-control' placeholder='Phone' required>
-                                            <div class='help-block with-errors'></div>
-
-                                        </div>
-                                    </div>
-
-                                    <div class='col-md-6'>
-                                        <div class='form-group'>
-                                            <input type='text' class='form-control' placeholder='Website' required>
-                                            <div class='help-block with-errors'></div>
-
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                                <div class='form-group'>
-                                    <textarea class='form-control' rows='6' placeholder='Message' required></textarea>
-                                    <div class='help-block with-errors'></div>
-
-                                </div>
-
-                                <button type='submit' class='symp-btn'>Send Message</button>
-
-                            </form>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-        <!--=============================================================================
-            /Contact Section
-        ===============================================================================-->
-
-    </div>
-
-    <!--=============================================================================
-        jQuery
-    ===============================================================================-->
-    <script>
-        /* Include contents of jquery.min.js, jquery.stellar.min.js, modernizr.js, owl.carousel.min.js, jquery.shuffle.min.js, jquery.magnific-popup.min.js, validator.min.js, smoothscroll.js, and script.js here */
-
-        /* Example for inline JS content */
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('DOM fully loaded and parsed');
-        });
-
-        // Add more scripts as needed
-    </script>
-
 </body>
-
 </html>
