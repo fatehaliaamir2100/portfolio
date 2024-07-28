@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <style>
+<style>
     body {
         font-family: Arial, sans-serif;
         line-height: 1.6;
@@ -9,52 +9,52 @@
         margin: 0;
         padding: 0;
     }
-    
+
     .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 20px;
     }
-    
+
     header {
         text-align: center;
         margin-bottom: 30px;
     }
-    
+
     h1 {
         color: #333;
         border-bottom: 2px solid #333;
         display: inline-block;
         padding-bottom: 10px;
     }
-    
+
     .profile {
         display: flex;
         gap: 30px;
     }
-    
+
     .profile-image {
-        width: auto;
-        height: auto;
+        width: 300px;
+        height: 300px;
         border-radius: 5px;
     }
-    
+
     .profile-info {
         flex: 1;
     }
-    
+
     .bio {
         margin-bottom: 20px;
     }
-    
+
     .personal-info p {
         margin: 5px 0;
     }
-    
+
     .buttons {
         margin-top: 20px;
     }
-    
+
     button {
         padding: 10px 20px;
         margin-right: 10px;
@@ -62,36 +62,41 @@
         border-radius: 5px;
         cursor: pointer;
     }
-    
+
     .hire-me {
         background-color: #333;
         color: white;
     }
-    
+
     .download-resume {
         background-color: transparent;
         border: 1px solid #333;
         color: #333;
+        text-decoration: none;
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 5px;
     }
-    
+
     footer {
         margin-top: 30px;
         text-align: center;
         border-top: 1px solid #ddd;
         padding-top: 20px;
     }
-    
+
     .social-icons {
         margin-top: 10px;
     }
 </style>
-        
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fateh Ali Aamir - About Me</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -102,7 +107,7 @@
                 <img src="1714897779280.jpeg" alt="Fateh Ali Aamir" class="profile-image">
                 <div class="profile-info">
                     <p class="bio">
-                        As a seasoned Software Engineer specializing in AI solutions, I bring a wealth of experience from working with global teams and leading innovative projects. With a strong foundation in Computer Science from the National University of Computer and Emerging Sciences, I have honed my skills in developing cutting-edge applications using Python, JavaScript, and TypeScript. My expertise spans across creating RAG-based chatbots, audio transcription systems, and AI-driven customer support agents utilizing OpenAI technologies. I am proficient in various frameworks and databases, including FastAPI, Express, MySQL, and Prisecone. My commitment to continuous learning is reflected in my certifications from Google Cloud Skills Boost and DeepLearning.AI, ensuring that I stay at the forefront of technological advancements. Whether it's developing backend apps, integrating AI flows in e-commerce platforms, or conducting sales calls with international clients, my diverse skill set and passion for technology drive me to deliver exceptional results.
+                        As a seasoned Software Engineer specializing in AI solutions, I bring a wealth of experience from working with global teams and leading innovative projects. With a strong foundation in Computer Science from the National University of Computer and Emerging Sciences, I have honed my skills in developing cutting-edge applications using Python, JavaScript, and TypeScript. My expertise spans across creating RAG-based chatbots, audio transcription systems, and AI-driven customer support agents utilizing OpenAI technologies. I am proficient in various frameworks and databases, including FastAPI, Express, MySQL, and Pinecone. My commitment to continuous learning is reflected in my certifications from Google Cloud Skills Boost and DeepLearning.AI, ensuring that I stay at the forefront of technological advancements. Whether it's developing backend apps, integrating AI flows in e-commerce platforms, or conducting sales calls with international clients, my diverse skill set and passion for technology drive me to deliver exceptional results.
                     </p>
                     <div class="personal-info">
                         <p><strong>Name:</strong> Fateh Ali Aamir</p>
@@ -112,7 +117,7 @@
                     </div>
                     <div class="buttons">
                         <button class="hire-me">Hire Me For Work</button>
-                        <button class="download-resume">Download Resume</button>
+                        <a href="resume-fateh-4.pdf" class="download-resume" download>Download Resume</a>
                     </div>
                 </div>
             </div>
@@ -125,4 +130,5 @@
         </footer>
     </div>
 </body>
+
 </html>
